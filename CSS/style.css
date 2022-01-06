@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding:0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* background-image: url("../images/ferma.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+
+.btn-1{
+
+  margin-top: 15rem;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px 5px rgb(33, 212, 48);
+  background-color: blueviolet;
+  color: rgb(253, 249, 6);
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/* Logo Ferma fericita */
+
+.farmSign{
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.farmSign img{
+  height: 15vh;
+  width: auto;
+  box-shadow: 0px 0px 10px 5px rgb(229, 255, 0);
+}
+
+.container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  padding:10vh;
+
+}
+
+.container1{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding:10vh;
+}
+
+.info{
+  background-color: rgb(253, 249, 6);
+  box-shadow: 0px 0px 10px 5px blueviolet;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+
+
+
+@media (min-width:700px){
+  .container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding:10vh;
+  }
+}
+
+@media (min-width:200px){
+  .container1{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding:10vh;
+    /* Deja era denumit container, div-ul cu animalele domestice, si a trebuit sa aplic media queries pentru homepage-ul cu butoanele */
+  }
+
+  .btn-1{
+    margin-top: 0;
+  }
+
+  .btn-11{
+    margin-top: 10rem;
+    /* margine sus doar la butonul cu animale domestice */
+  }
+
+}
+
+
+.container img{
+  width: 100%;
+  border-radius: 20px;
+  transition:all 0.3s;
+  border: 1px rgb(166, 255, 0) solid;
+}
+
+.container1 img{
+  width: 100%;
+  border-radius: 20px;
+  transition:all 0.3s;
+  border: 1px rgb(166, 255, 0) solid;
+}
+
+.playing{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 7px rgb(229, 255, 0);
+  border: none;
+}
+
+
+
