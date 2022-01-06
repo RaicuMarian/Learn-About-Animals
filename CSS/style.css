@@ -66,6 +66,14 @@ body{
 
 }
 
+.info-text{
+  background-color: rgb(253, 249, 6);
+  box-shadow: 0px 0px 10px 5px blueviolet;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
 
 
 
